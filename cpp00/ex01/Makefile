@@ -1,8 +1,8 @@
-NAME = megaphone
+NAME = phonebook
 
 OBJS = $(FILES:.cpp=.o)
 FLAGS = -Wall -Wextra -Werror
-FILES = megaphone.cpp
+FILES = Contact.cpp main.cpp Phonebook.cpp
 
 .PHONY : all clean fclean re
 
