@@ -1,7 +1,7 @@
 NAME = phonebook
 
 OBJS = $(FILES:.cpp=.o)
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = Contact.cpp main.cpp Phonebook.cpp
 
 .PHONY : all clean fclean re

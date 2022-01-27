@@ -1,7 +1,7 @@
 NAME = megaphone
 
 OBJS = $(FILES:.cpp=.o)
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = megaphone.cpp
 
 .PHONY : all clean fclean re
