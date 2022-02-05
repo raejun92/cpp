@@ -1,4 +1,4 @@
-NAME = ex04
+NAME = replace
 
 OBJS = $(FILES:.cpp=.o)
 FLAGS = -Wall -Wextra -Werror -std=c++98
