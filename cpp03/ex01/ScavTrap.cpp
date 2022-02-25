@@ -52,9 +52,10 @@ void ScavTrap::takeDamage(unsigned int amount) {
 }
 
 void ScavTrap::guardGate() {
-	if (hitPoint <= 0) {
+	if (hitPoint <= 0 || energyPoint < 50) {
 		return;
 	}
 	guardStatus = 1;
+	energyPoint -= 50;
 	std::cout << "ScavTrap " << name << " use guardGate\n";
 }
