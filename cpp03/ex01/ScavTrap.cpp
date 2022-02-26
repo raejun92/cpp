@@ -31,6 +31,11 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& reference) {
 	return *this;
 }
 
+void ScavTrap::attack(std::string const & target) {
+	std::cout << "ScavTrap " << name << " attack " << target 
+	<< ", causing " << attackDamage << " points of damage!\n";
+}
+
 void ScavTrap::takeDamage(unsigned int amount) {
 	if (guardStatus == 1) {
 		std::cout << "ScavTarp " << name << " save " << amount << " hitPoint\n";
