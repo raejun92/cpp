@@ -23,9 +23,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &reference) : name(reference.name), grad
 }
 
 Bureaucrat& Bureaucrat::operator=(const Bureaucrat &reference) {
-	if (this == &reference) {
-		return *this;
-	} else {
+	if (this != &reference) {
 		grade = reference.grade;
 	}
 	std::cout << "Bureaucrat assignation operator contructor\n";
