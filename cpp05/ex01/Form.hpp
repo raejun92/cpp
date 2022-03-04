@@ -20,6 +20,10 @@ class Form {
 			public:
 				GradeTooLowException(std::string message="Grade is more than 150") : std::runtime_error(message) {}
 		};
+		class CanNotSignException : public std::runtime_error {
+			public:
+				CanNotSignException(std::string message="It can't sign") : std::runtime_error(message) {}
+		};
 		std::string getName() const;
 		bool getIsSigned() const;
 		int getSignGrade() const;

@@ -60,7 +60,7 @@ bool Form::beSigned(Bureaucrat &bureaucrat) {
 		return false;
 	}
 	if (bureaucrat.getGrade() > signGrade) {
-		throw GradeTooLowException();
+		throw SignFalseException();
 	}
 	isSigned = true;
 	return true;
