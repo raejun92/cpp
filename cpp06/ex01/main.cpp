@@ -8,7 +8,7 @@ int main() {
 	std::cout << "a: " << a->getValue() << std::endl;
 
 	uintptr_t u = serialize(a);
-	std::cout << "u: " << std::hex << u << std::endl;
+	std::cout << "u: " << std::hex << u << std::dec << std::endl;
 
 	Data *b = deserialize(u);
 	std::cout << "b: " << b << std::endl;
