@@ -9,7 +9,10 @@ FILES = main.cpp
 all : $(NAME)
 
 $(NAME) : $(OBJS)
-	c++ $(FLAGS) $(OBJS) -o $(NAME)
+	c++ $(FLAGS) -o $@ $^
+
+$(OBJS) : $(FILES)
+	c++ $(FLAGS) -c $^
 
 clean :
 	rm -f *.o
