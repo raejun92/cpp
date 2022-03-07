@@ -9,6 +9,12 @@ void iter(T* array, int length, void (*f)(T)) {
 		f(array[i]);
 	}
 }
+template <typename T>
+void iter(T* array, int length, void (*f)(const T&)) {
+	for (int i = 0; i < length; i++) {
+		f(array[i]);
+	}
+}
 
 template <typename T>
 void print_iter(T value) {

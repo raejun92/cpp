@@ -6,7 +6,10 @@
 template <typename T>
 class Array {
 	public:
-		Array();
+		Array() {
+			array = new T();
+			n = 0;
+		}
 		~Array() {
 			delete[] array;
 		}
@@ -36,6 +39,12 @@ class Array {
 			return *this;
 		}
 		T& operator[](unsigned int index) {
+			if (index >= n) {
+				throw IndexErrorException();
+			}
+			return array[index];
+		}
+		const T& operator[](unsigned int index) const {
 			if (index >= n) {
 				throw IndexErrorException();
 			}
