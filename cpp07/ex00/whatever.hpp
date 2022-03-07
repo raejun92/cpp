@@ -20,9 +20,9 @@ T max(T first, T second) {
 
 template <typename T>
 T min(T first, T second) {
-	if (first > second)
-		return second;
-	return first;
+	if (first < second)
+		return first;
+	return second;
 }
 
 #endif
