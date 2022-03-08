@@ -55,12 +55,6 @@ long Span::longestSpan() {
 	if (v.size() <= 1) {
 		throw NoCompareException();
 	}
-	std::vector<int> copy(v);
-	// std::vector<int> span;
-	// std::sort(copy.begin(), copy.end());
-	// for (size_t i = 0; i < copy.size() - 1; i++) {
-	// 	span.push_back(copy[i+1] - copy[i]);
-	// }
-	return *(std::max_element(copy.begin(), copy.end())) - 
-	*(std::min_element(copy.begin(), copy.end()));
+	return *(std::max_element(v.begin(), v.end())) - 
+	*(std::min_element(v.begin(), v.end()));
 }
