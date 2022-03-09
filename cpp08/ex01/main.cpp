@@ -17,7 +17,7 @@ int main() {
 			std::vector<int>::iterator end;
 			begin = sp.getVector().begin();
 			end = sp.getVector().end();
-			sp2.addNumber(end, begin);
+			sp2.addNumber(begin, end);
 			std::cout << sp2.shortestSpan() << std::endl;
 			std::cout << sp2.longestSpan() << std::endl;
 		} catch (std::exception &e) {

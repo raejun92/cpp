@@ -2,7 +2,6 @@
 
 int main() {
 	try {
-		// std::vector<int> v = { 10, 20, 30, 40};
 		std::vector<int> v;
 		v.push_back(10);
 		v.push_back(20);
