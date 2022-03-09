@@ -10,6 +10,15 @@ int main() {
 		sp.addNumber(11);
 		std::cout << sp.shortestSpan() << std::endl;
 		std::cout << sp.longestSpan() << std::endl;
+
+		Span sp2(5);
+		std::vector<int>::iterator begin;
+		std::vector<int>::iterator end;
+		begin = sp.getVector().begin();
+		end = sp.getVector().end();
+		sp2.addNumber(begin, end);
+		std::cout << sp2.shortestSpan() << std::endl;
+		std::cout << sp2.longestSpan() << std::endl;
 	}
 	{
 		try {

@@ -58,3 +58,7 @@ long Span::longestSpan() {
 	return *(std::max_element(v.begin(), v.end())) - 
 	*(std::min_element(v.begin(), v.end()));
 }
+
+std::vector<int> Span::getVector() {
+	return v;
+}
