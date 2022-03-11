@@ -23,7 +23,7 @@ class Span {
 		public:
 			NoCompareException(std::string message="There's no one to compare") : std::runtime_error(message) {}
 		};
-		std::vector<int> getVector();
+		std::vector<int>& getVector();
 	private:
 		std::vector<int> v;
 		unsigned int n;
